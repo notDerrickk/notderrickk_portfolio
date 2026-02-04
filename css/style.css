@@ -235,6 +235,7 @@ section {
 }
 
 .projects-part,
+.featured-project-part,
 .contact-part {
     padding: 3rem 0;
 }
@@ -299,6 +300,29 @@ section {
 .project-card-description {
     font-size: 0.95rem;
     color: var(--text-secondary);
+}
+
+.featured-project {
+    padding: 2rem;
+}
+
+.featured-project-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--accent-secondary);
+}
+
+.featured-project-description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.featured-project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 /* Footer */

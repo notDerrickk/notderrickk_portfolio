@@ -1,0 +1,9 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Docker / env
+docker-compose.yml
+*.env
+Dockerfile

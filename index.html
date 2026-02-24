@@ -1,145 +1,328 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notderrickk | Computer Science Student & Cybersecurity Enthusiast</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>JustDerrickk | IT Student & Cybersecurity Enthusiast</title>
+    <meta name="description" content="Portfolio of JustDerrickk — Computer Science student (L2) specializing in Cybersecurity. Projects, skills and contact.">
+    <meta name="author" content="JustDerrickk">
+    <meta name="keywords" content="portfolio, cybersecurity, computer science, student, developer, JustDerrickk">
+
+    <meta property="og:title" content="JustDerrickk | IT Student & Cybersecurity Enthusiast">
+    <meta property="og:description" content="IT student building projects in cybersecurity, systems and web development.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span class="sun">☀️</span>
-        <span class="moon">🌙</span>
-    </button>
 
-    <!-- Main Section -->
-    <section class="main-section">
-        <div class="container">
-            <!-- Hero Part -->
-            <div class="part-card hero">
-                <div class="hero-content">
-                    <div class="floating-badge">🎓 Computer Science Student L2</div>
-                    <h1 class="hero-title">
-                        <span class="wave">👋</span>
-                        I'm <span class="highlight">notderrickk</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Cybersecurity Enthusiast & Developer
-                    </p>
-                    <p class="hero-description">
-                        Computer Science student passionate about cybersecurity. I learn by building projects, 
-                        solving problems, and exploring web development and security concepts.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="https://github.com/notderrickk" target="_blank" class="btn btn-secondary">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="terminal-window">
-                        <div class="terminal-header">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="terminal-body">
-                            <div class="terminal-line">
-                                <span class="prompt">$</span> <span class="command">whoami</span>
-                            </div>
-                            <div class="terminal-line output">notderrickk</div>
-                            <div class="terminal-line">
-                                <span class="prompt">$</span> <span class="command">cat skills.txt</span>
-                            </div>
-                            <div class="terminal-line skills-line">
-                                <span class="skill-badge">Java</span>
-                                <span class="skill-badge">HTML</span>
-                                <span class="skill-badge">CSS</span>
-                                <span class="skill-badge">JS</span>
-                                <span class="skill-badge">C</span>
-                                <span class="skill-badge">Python</span>
-                            </div>
-                            <div class="terminal-line">
-                                <span class="prompt">$</span> <span class="cursor">_</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>JustDerrickk<span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#roadmap" class="nav-link">Roadmap</a>
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-
-            <!-- Featured Project Part -->
-            <div class="part-card featured-project-part">
-                <h2 class="section-title">
-                    <span class="title-number">01.</span> Featured Project
-                </h2>
-                <div class="featured-project">
-                    <h3 class="featured-project-title">RunGenius</h3>
-                    <p class="featured-project-description">
-                        My main project - a web application that generates personalized running plans. It helps users achieve their running goals with workouts and progress tracking.
-                    </p>
-                    <div class="featured-project-links">
-                        <a href="https://rungenius.azurewebsites.net" target="_blank" class="btn btn-primary">
-                            Visit RunGenius
-                        </a>
-                        <a href="https://github.com/notderrickk/rungenius" target="_blank" class="btn btn-secondary">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            GitHub Repository
-                        </a>
-                    </div>
-                </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
+        </div>
+    </nav>
 
-            <!-- Projects Part -->
-            <div class="part-card projects-part" id="projects">
-                <h2 class="section-title">
-                    <span class="title-number">02.</span> Other Projects
-                </h2>
-                <div id="loading" class="loading-state">
-                    <div class="spinner"></div>
-                    <p>Loading projects...</p>
+    <!-- HERO + TERMINAL -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-animate="fade-up">
+                    <span class="badge-dot"></span>
+                    Computer Science Student — L2
                 </div>
-                <div id="repos-container" class="projects-grid"></div>
-                <div id="error-message" class="error-state" style="display: none;">
-                    <p>💻 Check my GitHub for my projects</p>
-                </div>
-            </div>
-
-            <!-- Contact Part -->
-            <div class="part-card contact-part">
-                <h2 class="section-title">
-                    <span class="title-number">03.</span> Contact
-                </h2>
-                <div class="contact-content">
-                    <p class="contact-text">
-                        You can ask me anything or just want to chat? Feel free to reach out!
-                </p><br>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="https://github.com/notderrickk" target="_blank" class="btn btn-primary">
+                <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                    Hi, I'm <span class="gradient-text">JustDerrickk</span>
+                </h1>
+                <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                    Cybersecurity Enthusiast & Developer
+                </p>
+                <p class="hero-desc" data-animate="fade-up" data-delay="300">
+                    Building secure systems, breaking things to understand them and learning something new every day.
+                </p>
+                <div class="hero-cta" data-animate="fade-up" data-delay="400">
+                    <a href="#projects" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                        View Projects
+                    </a>
+                    <a href="https://github.com/JustDerrickk" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         GitHub
                     </a>
-                    <a href="mailto:notderrickk@gmail.com" class="btn btn-secondary">
-                        Email
-                    </a>
+                </div>
+            </div>
+
+            <!-- Terminal -->
+            <div class="terminal" data-animate="fade-left" data-delay="200">
+                <div class="terminal-chrome">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="terminal-title">JustDerrickk@portfolio:~</span>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <!-- Lines typed by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="600">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+        <div class="section-container">
+            <h2 class="section-heading" data-animate="fade-up">
+                <span class="heading-number">01.</span> About Me
+            </h2>
+            <div class="about-grid" data-animate="fade-up" data-delay="100">
+                <div class="about-text">
+                    <p>
+                        I'm a 2nd year Computer Science student with a strong interest in <strong>cybersecurity</strong>, systems administration and software development.
+                    </p>
+                    <p>
+                        I enjoy building practical projects, running a <strong>homelab</strong> and diving into security challenges. My goal is to become a <strong>cybersecurity engineer</strong>.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Development</h3>
+                        <p>Python, Java, C, HTML/CSS, JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Security</h3>
+                        <p>Linux, Networking, CTF, Penetration Testing</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+                        </div>
+                        <h3>Systems</h3>
+                        <p>Homelab, Docker, Servers, Automation</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Web Dev</h3>
+                        <p>Frontend, Backend, APIs, Databases</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- CYBER ROADMAP (TO-DO) -->
+    <section class="section section-alt" id="roadmap">
+        <div class="section-container">
+            <h2 class="section-heading" data-animate="fade-up">
+                <span class="heading-number">02.</span> Cybersecurity Roadmap
+            </h2>
+            <p class="section-subtitle" data-animate="fade-up" data-delay="50">Tracking my journey into cybersecurity — one checkpoint at a time.</p>
+            <div class="roadmap-grid" data-animate="fade-up" data-delay="100">
+                <div class="roadmap-item completed">
+                    <div class="roadmap-checkbox">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="roadmap-content">
+                        <h4>Build a personal homelab</h4>
+                        <p>Self-hosted services, learning infrastructure</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-checkbox"></div>
+                    <div class="roadmap-content">
+                        <h4>Create a secure password manager</h4>
+                        <p>Encryption, secure storage, key management</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-checkbox"></div>
+                    <div class="roadmap-content">
+                        <h4>Practice CTF challenges</h4>
+                        <p>HackTheBox, TryHackMe, OverTheWire</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-checkbox"></div>
+                    <div class="roadmap-content">
+                        <h4>Learn penetration testing basics</h4>
+                        <p>Nmap, Burp Suite, Metasploit fundamentals</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-checkbox"></div>
+                    <div class="roadmap-content">
+                        <h4>Harden a Linux server</h4>
+                        <p>Firewall, SSH hardening, fail2ban, auditing</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-checkbox"></div>
+                    <div class="roadmap-content">
+                        <h4>Network monitoring setup</h4>
+                        <p>Wireshark, Suricata, log analysis</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-checkbox"></div>
+                    <div class="roadmap-content">
+                        <h4>Write security automation scripts</h4>
+                        <p>Python scripts for scanning, alerting, hardening</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="section" id="featured">
+        <div class="section-container">
+            <h2 class="section-heading" data-animate="fade-up">
+                <span class="heading-number">03.</span> Featured Project
+            </h2>
+            <div class="featured-card" data-animate="fade-up" data-delay="100">
+                <div class="featured-glow"></div>
+                <div class="featured-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                    Featured
+                </div>
+                <div class="featured-content">
+                    <h3 class="featured-title">RunGenius</h3>
+                    <p class="featured-desc">
+                        A training plan generator application that creates personalized running programs. 
+                        It helps runners of all levels achieve their goals with structured workouts and progress tracking.
+                    </p>
+                    <div class="featured-tech">
+                        <span class="tech-tag">Web App</span>
+                        <span class="tech-tag">Training</span>
+                        <span class="tech-tag">Generator</span>
+                    </div>
+                    <div class="featured-links">
+                        <a href="https://rungenius.rodericnev.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            Visit RunGenius
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS (GITHUB API) -->
+    <section class="section section-alt" id="projects">
+        <div class="section-container">
+            <h2 class="section-heading" data-animate="fade-up">
+                <span class="heading-number">04.</span> Projects
+            </h2>
+            <p class="section-subtitle" data-animate="fade-up" data-delay="50">Fetched live from GitHub — always up to date.</p>
+            
+            <div id="projectsLoading" class="loading-state">
+                <div class="loader"></div>
+                <p>Fetching repositories...</p>
+            </div>
+            <div id="projectsGrid" class="projects-grid"></div>
+            <div id="projectsError" class="error-state" style="display:none;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <p>Could not load repositories. <a href="https://github.com/JustDerrickk" target="_blank" rel="noopener noreferrer">Visit my GitHub</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="section-container">
+            <h2 class="section-heading" data-animate="fade-up">
+                <span class="heading-number">05.</span> Get In Touch
+            </h2>
+            <p class="contact-text" data-animate="fade-up" data-delay="50">
+                Have a question, an opportunity, or just want to chat about cybersecurity? Feel free to reach out.
+            </p>
+            <div class="contact-links" data-animate="fade-up" data-delay="100">
+                <a href="mailto:justderrickk@gmail.com" class="contact-link-card">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <div>
+                        <span class="contact-link-label">Email</span>
+                        <span class="contact-link-value">justderrickk@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://github.com/JustDerrickk" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <div>
+                        <span class="contact-link-label">GitHub</span>
+                        <span class="contact-link-value">JustDerrickk</span>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    <div>
+                        <span class="contact-link-label">LinkedIn</span>
+                        <span class="contact-link-value">Connect with me</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>Designed & Built by notderrickk</p>
-            <p class="footer-year">© 2026</p>
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>JustDerrickk<span class="logo-bracket"> /&gt;</span>
+                </span>
+            </div>
+            <div class="footer-center">
+                <p>Designed & Built by <strong>JustDerrickk</strong></p>
+                <p class="footer-copy">&copy; 2026 — All rights reserved</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/JustDerrickk" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="mailto:justderrickk@gmail.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+            </div>
         </div>
     </footer>
 

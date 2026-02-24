@@ -1,4 +1,4 @@
-# Portfolio notderrickk
+# Portfolio JustDerrickk
 
 Portfolio personnel avec intégration GitHub et projets.
 

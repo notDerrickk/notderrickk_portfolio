@@ -157,14 +157,15 @@ strong { color: var(--accent); }
     font-weight: 500;
     color: var(--text-secondary);
     border-radius: var(--radius-sm);
-    transition: color var(--transition), background var(--transition);
+    transition: color var(--transition), border-color var(--transition);
     position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
     color: var(--accent);
-    background: var(--accent-glow);
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
 }
 
 .nav-actions {
@@ -181,12 +182,11 @@ strong { color: var(--accent); }
     display: grid;
     place-items: center;
     color: var(--text-secondary);
-    transition: color var(--transition), background var(--transition);
+    transition: color var(--transition);
 }
 
 .theme-toggle:hover {
     color: var(--accent);
-    background: var(--accent-glow);
 }
 
 .icon-moon { display: none; }
@@ -260,23 +260,13 @@ strong { color: var(--accent); }
 .hero-badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
     padding: 0.4rem 1rem;
-    background: var(--accent-glow);
-    border: 1px solid var(--border-accent);
-    border-radius: 50px;
+    border-left: 2px solid var(--accent);
+    background: transparent;
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--accent);
     margin-bottom: 1.5rem;
-}
-
-.badge-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent);
-    animation: none;
 }
 
 @keyframes pulse {
@@ -351,7 +341,6 @@ strong { color: var(--accent); }
 
 .btn-outline:hover {
     border-color: var(--border-accent);
-    background: var(--accent-glow);
     color: var(--accent);
 }
 
@@ -364,7 +353,7 @@ strong { color: var(--accent); }
 .terminal {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
@@ -372,30 +361,15 @@ strong { color: var(--accent); }
 .terminal-chrome {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: flex-start;
     padding: 0.75rem 1rem;
     background: var(--bg-tertiary);
     border-bottom: 1px solid var(--border);
 }
 
-.terminal-dots {
-    display: flex;
-    gap: 6px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-}
-
-.dot-red { background: #ff5f57; }
-.dot-yellow { background: #ffbd2e; }
-.dot-green { background: #27c93f; }
-
 .terminal-title {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
 }
 
@@ -505,16 +479,7 @@ strong { color: var(--accent); }
     font-size: clamp(1.75rem, 3vw, 2.25rem);
     font-weight: 700;
     margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.heading-number {
-    font-family: var(--font-mono);
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--accent);
+    letter-spacing: -0.02em;
 }
 
 .section-subtitle {
@@ -560,8 +525,7 @@ strong { color: var(--accent); }
 
 .skill-card:hover {
     border-color: var(--border-accent);
-    box-shadow: none;
-    transform: none;
+    background: var(--bg-card-hover);
 }
 
 .skill-icon {
@@ -610,7 +574,7 @@ strong { color: var(--accent); }
 
 .cert-card:hover {
     border-color: var(--border-accent);
-    transform: translateY(-2px);
+    background: var(--bg-card-hover);
 }
 
 .cert-img {
@@ -658,7 +622,7 @@ strong { color: var(--accent); }
 
 .roadmap-item:hover {
     border-color: var(--border-accent);
-    box-shadow: none;
+    background: var(--bg-card-hover);
 }
 
 .roadmap-checkbox {
@@ -708,38 +672,14 @@ strong { color: var(--accent); }
     position: relative;
     background: var(--bg-card);
     border: 1px solid var(--border-accent);
-    border-radius: var(--radius-xl);
-    padding: 3rem;
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
     overflow: hidden;
     transition: all var(--transition);
 }
 
 .featured-card:hover {
-    box-shadow: none;
-    transform: none;
-}
-
-.featured-glow {
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 400px;
-    height: 400px;
-    background: none;
-    pointer-events: none;
-}
-
-.featured-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.35rem 0.9rem;
-    background: var(--accent);
-    border-radius: 50px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 1.5rem;
+    background: var(--bg-card-hover);
 }
 
 .featured-content {
@@ -762,21 +702,10 @@ strong { color: var(--accent); }
 }
 
 .featured-tech {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
+    display: block;
     margin-bottom: 2rem;
-}
-
-.tech-tag {
-    padding: 0.3rem 0.8rem;
-    background: var(--accent-glow);
-    border: 1px solid var(--border-accent);
-    border-radius: 50px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: var(--accent);
-    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    font-size: 0.95rem;
 }
 
 .featured-links {
@@ -805,8 +734,7 @@ strong { color: var(--accent); }
 
 .project-card:hover {
     border-color: var(--border-accent);
-    box-shadow: none;
-    transform: none;
+    background: var(--bg-card-hover);
 }
 
 .project-card-header {
@@ -949,7 +877,7 @@ strong { color: var(--accent); }
 
 .contact-link-card:hover {
     border-color: var(--border-accent);
-    background: var(--accent-glow);
+    background: var(--bg-card-hover);
     color: var(--accent);
 }
 

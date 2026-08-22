@@ -1,4 +1,4 @@
-/* JustDerrickk — Portfolio Script */
+/* JustDerrickk - Portfolio Script */
 
 const GITHUB_USERNAME = 'JustDerrickk';
 const GITHUB_API = `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=30`;
@@ -58,13 +58,10 @@ const terminalBody = document.getElementById('terminalBody');
 
 const terminalSequence = [
     { type: 'command', text: 'whoami' },
-    { type: 'output', text: 'Computer Science Student | Future Cybersecurity Engineer' },
+    { type: 'output', text: 'Computer Science student | third year' },
     { type: 'blank' },
     { type: 'command', text: 'skills --list' },
-    { type: 'skills', items: ['Linux', 'Networking', 'Python', 'Security', 'Web Dev', 'Docker'] },
-    { type: 'blank' },
-    { type: 'command', text: 'cat mission.txt' },
-    { type: 'output', text: 'Building secure systems, one project at a time.' },
+    { type: 'skills', items: ['Linux', 'Networking', 'Python', 'Security', 'CTF', 'Docker'] },
     { type: 'cursor' },
 ];
 
